@@ -1,0 +1,13 @@
+services:
+  server:
+    image: server 
+    container_name: server
+    build: .
+    ports:
+      - "5000:5000"
+  stream:
+    image: stream
+    container_name: stream
+    build: /stream
+    ports: 
+      - "8080:8080"

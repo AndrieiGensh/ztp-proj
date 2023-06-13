@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+  
+<html>
+<head>
+    <title>Time Metrics</title>
+</head>
+<body>
+
+    <ol>
+        {%for stat in stats%}
+            <li>User with id {{stat["User"]}} visited us => {{stat["Visits"]}} times so far</li>
+        {%endfor%}
+          
+    </ol>
+
+</body>

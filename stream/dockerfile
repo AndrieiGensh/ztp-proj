@@ -1,0 +1,6 @@
+FROM python:3.10.3
+COPY . .
+RUN pip install requests
+EXPOSE 8080
+ENTRYPOINT [ "python3", "./stream.py"]
+CMD ["./stream.py"]
