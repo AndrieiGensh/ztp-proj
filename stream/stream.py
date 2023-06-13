@@ -11,5 +11,5 @@ while True:
             "Book": [random.randint(100, 500) for _ in range(5)]
            }
     print(data["Book"])
-    requests.post("http://127.0.0.1:5000/books", json=data)
+    requests.post("http://server:5000/books", json=data)
     time.sleep(2)
